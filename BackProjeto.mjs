@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     window.location.href = "listaAlunos.html?apenas=aprovados"
                     break
                 case '5':
+                    localStorage.clear()
                     window.location.href = window.close()
                     break              
                 default:
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function (){
     const btListaTeste = document.getElementById('inListaTeste')
     if(btListaTeste){
         btListaTeste.addEventListener('click', function (){
+            alert("Cadastrado 10 alunos para teste.")
             localStorage.clear()
             alunos = [
                 { 'nome': 'Alice', 'ra': 12345, 'idade': 25, 'sexo': 'Feminino', 'media': 7, 'resultado': 'Aprovado' },
@@ -62,6 +64,10 @@ document.addEventListener('DOMContentLoaded', function (){
             localStorage.setItem('dados', JSON.stringify(alunos))
         })
     }
+    else{
+        
+    }
+
 })
 
 
