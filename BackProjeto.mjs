@@ -21,12 +21,21 @@ document.addEventListener('DOMContentLoaded', function () {
                     break
                 case '5':
                     localStorage.clear()
-                    window.location.href = window.close()
+                    window.location.href = "index.html"
                     break              
                 default:
                     alert("Número Inválido")
                     break
             }
+        })
+    }
+})
+
+document.addEventListener('DOMContentLoaded', function (){
+    const btIniciar = document.getElementById('inInicio')
+    if(btIniciar){
+        btIniciar.addEventListener('click', function (){
+            window.location.href = "FrontProjeto.html"
         })
     }
 })
@@ -105,5 +114,7 @@ form?.addEventListener("submit", function(event) {
     var media = document.getElementById("inMedia").value = ''
     var resultado = document.getElementById("inResultado").value = ''
 });
+
+
 
 
